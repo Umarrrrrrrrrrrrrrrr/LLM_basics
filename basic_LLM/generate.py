@@ -15,7 +15,7 @@ model.load_state_dict(torch.load("model.pth"))
 model.eval()
 
 # Start with the letter h
-context = torch.tensor([stoi['h']], dtype=torch.long)
+context = torch.tensor([[stoi['h']]], dtype=torch.long)
 
 # Generate next 100 characters
 for _ in range(100):
